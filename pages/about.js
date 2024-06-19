@@ -2,6 +2,7 @@ import Image from "next/image";
 import image1 from "@/public/about-1.jpg";
 import image2 from "@/public/about-2.jpg";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -37,12 +38,13 @@ export default function About() {
           </div>
         </div>
 
-        <div className="col-span-2">
+        <div className="col-span-2 relative">
           <Image
             src={image1}
             alt="Family sitting around a fire pit in front of cabin"
             placeholder="blur"
             quality={80}
+            fetchpriority="high"
           />
         </div>
 
@@ -52,6 +54,7 @@ export default function About() {
             fill
             className="object-cover"
             alt="Family that manages The Wild Oasis"
+            fetchpriority="high"
           />
         </div>
 
@@ -77,12 +80,12 @@ export default function About() {
             </p>
 
             <div>
-              <a
+              <Link
                 href="/cabins"
                 className="inline-block mt-4 bg-accent-500 px-8 py-5 text-primary-800 text-lg font-semibold hover:bg-accent-600 transition-all"
               >
                 Explore our luxury cabins
-              </a>
+              </Link>
             </div>
           </div>
         </div>

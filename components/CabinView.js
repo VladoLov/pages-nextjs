@@ -15,6 +15,7 @@ function CabinView({ cabin }) {
           fill
           className="object-cover"
           alt={`Cabin ${name}`}
+          fetchpriority="high"
         />
       </div>
 

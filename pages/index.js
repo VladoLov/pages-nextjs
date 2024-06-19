@@ -4,7 +4,7 @@ import bg from "@/public/bg.png";
 
 export default function Home() {
   return (
-    <main className="mt-24">
+    <main className="mt-24 ">
       <Image
         src={bg}
         fill
